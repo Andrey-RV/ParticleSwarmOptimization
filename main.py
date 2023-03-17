@@ -2,7 +2,7 @@ from particle_swarm_optimization import ParticleSwarmOptimization, fit_function,
 
 BOUNDS = [(-5, 5), (-5, 5)]
 NUM_PARTICLES = 30
-MAX_ITER = 20
+MAX_ITER = 30
 START_WEIGHT = 1
 END_WEIGHT = 0.1
 ALPHA = 0.001
