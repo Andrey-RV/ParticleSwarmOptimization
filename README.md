@@ -8,7 +8,7 @@ The algorithm implemented here works as follows:
  3. If the particle's fitness is better than its best fitness, then the particle's best fitness is updated to the particle's current fitness, and its best position is updated to its current position.
  4. If the particle's best fitness is better than the best global fitness found so far, then the best global fitness found so far is updated to the particle's best fitness, and the best global position found so far is updated to the particle's best position.
  5. Updates the particle's velocity and position according to the following formulae:
-    -   $\displaystyle v_{i+1} = \omega v_{i} + 2rand()({p_{best}}_{i} - p_{i}) + 2rand()({g_{best}}_{i} - p_{i})$
+    -   $\displaystyle v_{i+1} = \omega v_{i} + 2rand()(p_{best_i} - p_{i}) + 2rand()(g_{best_i} - p_{i})$
     -   $\displaystyle p_{i+1} = p_{i} + v_{i+1}$
  6. Repeat steps 2-5 until hitting the maximum given number of iterations.
 
